@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+
+	<!-- Titles -->
+	<title>E-commerce</title>
+    <meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<!-- Адаптивная  верстка -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<!-- Syles -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
+	<!-- <link rel="stylesheet" href="libs/owl-carousel/owl.theme.css"> -->
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- fonts -->
+	<link rel="stylesheet" href="fonts/roboto/roboto.css">
+	<link rel="stylesheet" href="fonts/robotocondensed/robotocondensed.css">
+	<link rel="stylesheet" href="fonts/consolas/consolas.css">
+	<link rel="stylesheet" href="fonts/fontawesome-5.0.10/css/fontawesome-all.css">
+
+
+	<!-- FavIcons -->
+	<!-- <link rel="icon" href="img/favicons/favicon-16.png"  type="image/x-icon" />
+	<link rel="shortcut icon" href="img/favicons/favicon-64.png"  type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/favicons/favicon-256.png"> -->
+
+</head>
+<body>
+
+	<!-- header -->
+	<div class="bg-header">
+		
+		<!-- header-menu -->
+		<div class="container section">
+			<div class="row align-items-center">
+
+				<!-- лого -->
+				<div class="col-2">
+					<div class="logo">BEIGE</div>
+				</div>		
+				<!--// лого -->
+
+				<!-- поиск -->
+				<div class="col-4">
+					<div class="search">
+						<input type="text" class = "form-field" placeholder="Очень быстрый поиск">
+						<i class="fas fa-search"></i>
+					</div>
+				</div>	
+				<!--// поиск -->
+
+				<!-- регистрация пользователя -->
+				<div class="col-3">
+					
+					<!-- вход -->
+					<a href="#!" class="registration">
+						<i class="fas fa-lock"></i>
+						Войти
+					</a>
+					<!--// вход -->
+
+					<!-- регистрация -->
+					<a href="#!" class="registration">
+						<i class="fas fa-user-plus"></i>
+						Регистрация
+					</a>
+					<!--// регистрация -->
+
+				</div>	
+				<!--// регистрация пользователя -->
+
+				<!-- корзина -->
+				<div class="col-3">
+					<i class="fas fa-shopping-bag"></i>
+					<div class="shopping-cart">
+						<div class="shopping-cart__goods">Товаров - </div>
+						<div class="shopping-cart__amount">на сумму</div>
+						<i class="fas fa-ruble-sign"></i>
+					</div>
+				</div>		
+				<!--// корзина -->
+
+			</div>
+		</div>
+		<!--// header-menu -->
+
+		<!-- header-slider -->
+		<div class="container">
+			
+			<div class="row">
+				
+				<div class="col-9">
+					<div class="item-desc">
+						<h2 class="item__title">Куртка ARMANI JEANS</h2>
+						<p class="item__label">Количество ограничено</p>
+						<p class="item__text">Черная кожаная куртка на<br>
+						 молнии от Armani Jeans</p>
+					</div>	
+				</div>
+				
+				<div class="col-3">
+					<div class="item-card item-card--rounded">
+					
+						<i class="fas fa-star item-card--favorite"></i>
+					
+						<div class="card-image">
+							<img src="img/bg/aj-jacket.png" alt="Фото товара">
+						</div>
+						
+						<h3 class="card__title">Куртка Armani Jeans</h3>
+						<div class="card_desc">Кожаная куртка на молнии</div>
+						<div class="card__price card__price--red">
+							<span>-15% |</span>
+							12 700
+							<i class="fas fa-ruble-sign"></i>
+						</div> 
+					
+					</div>
+				</div>
+
+			</div>
+		
+		</div>
+		<!--// header-slider -->
+
+	</div>
+	<!--// header -->
+
+	<!-- Меню товаров -->
+	<div class="container section">
+		<div class="row">
+			<div class="owl-carousel-menu">
+				<div class="col-3">
+					<div class="menu-item menu-item__bg1">женская одежда</div>
+				</div>
+
+				<div class="col-3">
+					<div class="menu-item menu-item__bg2">мужская одежда</div>
+				</div>
+
+				<div class="col-3">
+					<div class="menu-item menu-item__bg3">обувь</div>
+				</div>
+
+				<div class="col-3">
+					<div class="menu-item menu-item__bg4">аксессуары</div>
+				</div>
+
+				<div class="col-3">
+					<div class="menu-item menu-item__bg1">что-то еще</div>
+				</div>				
+
+				<div class="col-3">
+					<div class="menu-item menu-item__bg2">детская</div>
+				</div>
+
+				<div class="col-3">
+					<div class="menu-item menu-item__bg3">модная</div>
+				</div>				
+
+			</div>
+		
+		</div>
+	</div>
+	<!--// Меню товаров -->
+	
+	<!-- Новости-->
+	<div class="container">
+		<div class="block">Блок новостей</div>
+	</div>
+	<!--// Новости-->
+	
+	<!-- Новинки -->
+	<div class="bg-newcomers">
+		<div class="container clearfix">
+			
+			<div class="bg-newcomers__title">~ Новинки ~</div>
+			
+				<!-- товары -->
+				<div class="row mb-50">
+				
+					<div class="owl-carousel-newcomers">			
+					
+						<!-- Капточка товара -->
+						<div class="col-3">
+							<div class="item-card">
+							
+								<i class="fas fa-star"></i>
+							
+								<div class="card-image">
+									<img src="img/bg/aj-jacket.png" alt="Фото товара">
+								</div>
+								
+								<h3 class="card__title">Куртка Armani Jeans</h3>
+								<div class="card_desc">Кожаная куртка на молнии</div>
+								<div class="card__price card__price--red">
+									<span>-15% |</span>
+									12 700
+									<i class="fas fa-ruble-sign"></i>
+								</div> 
+							
+							</div>
+						</div>
+						<!--// Капточка товара -->
+
+						<!-- Капточка товара -->
+						<div class="col-3">
+							<div class="item-card">
+							
+								<i class="fas fa-star"></i>
+							
+								<div class="card-image">
+									<img src="img/bg/j-brand.png" alt="Фото товара">
+								</div>
+								
+								<h3 class="card__title">J BRAND</h3>
+								<div class="card_desc">Узкие джинсы</div>
+								<div class="card__price">
+									12 700
+									<i class="fas fa-ruble-sign"></i>
+								</div> 
+							
+							</div>
+						</div>
+						<!--// Капточка товара -->
+
+						<!-- Капточка товара -->
+						<div class="col-3">
+							<div class="item-card">
+							
+								<i class="fas fa-star"></i>
+							
+								<div class="card-image">
+									<img src="img/bg/number288.png" alt="Фото товара">
+								</div>
+								
+								<h3 class="card__title">NUMBER 288</h3>
+								<div class="card_desc">Кеды 'Grand'</div>
+								<div class="card__price">
+									8 800
+									<i class="fas fa-ruble-sign"></i>
+								</div> 
+							
+							</div>
+						</div>
+						<!--// Капточка товара -->
+
+						<!-- Капточка товара -->
+						<div class="col-3">
+							<div class="item-card">
+							
+								<i class="fas fa-star"></i>
+							
+								<div class="card-image">
+									<img src="img/bg/paul-smith.png" alt="Фото товара">
+								</div>
+								
+								<h3 class="card__title">PAUL SMITH</h3>
+								<div class="card_desc">Кожаные перчатки</div>
+								<div class="card__price card__price--red">
+									<span>-20% |</span>
+									3 199
+									<i class="fas fa-ruble-sign"></i>
+								</div> 
+							
+							</div>
+						</div>
+						<!--// Капточка товара -->
+
+						<!-- Капточка товара -->
+						<div class="col-3">
+							<div class="item-card">
+							
+								<i class="fas fa-star"></i>
+							
+								<div class="card-image">
+									<img src="img/bg/paul-smith.png" alt="Фото товара">
+								</div>
+								
+								<h3 class="card__title">PAUL SMITH</h3>
+								<div class="card_desc">Кожаные перчатки</div>
+								<div class="card__price card__price--red">
+									<span>-20% |</span>
+									3 199
+									<i class="fas fa-ruble-sign"></i>
+								</div> 
+							
+							</div>
+						</div>
+						<!--// Капточка товара -->
+
+						<!-- Капточка товара -->
+						<div class="col-3">
+							<div class="item-card">
+							
+								<i class="fas fa-star"></i>
+							
+								<div class="card-image">
+									<img src="img/bg/paul-smith.png" alt="Фото товара">
+								</div>
+								
+								<h3 class="card__title">PAUL SMITH</h3>
+								<div class="card_desc">Кожаные перчатки</div>
+								<div class="card__price card__price--red">
+									<span>-20% |</span>
+									3 199
+									<i class="fas fa-ruble-sign"></i>
+								</div> 
+							
+							</div>
+						</div>
+						<!--// Капточка товара -->
+					
+					</div>		
+				
+				</div>
+				<!--// товары -->
+				
+			</div>
+
+			<!-- <div class="bg-newcomers__navigation"> -->
+				<a href="#!" class="button">смотреть все</a>
+			<!-- </div> -->
+
+		</div>
+	</div>
+	<!--// Новинки -->
+
+	<!-- статьи -->
+	<div class="container">
+
+		<div class="news__title">
+			<div class="block">Статьи</div>
+		</div>
+
+		<div class="row">
+			
+			<!-- Карточка статья -->
+			<div class="col-4">
+				<div class="block">Статья 1</div>
+			</div>
+			<!-- Карточка статья -->
+
+			<!-- Карточка статья -->
+			<div class="col-4">
+				<div class="block">Статья 2</div>
+			</div>
+			<!-- Карточка статья -->
+
+			<!-- Карточка статья -->
+			<div class="col-4">
+				<div class="block">Статья 3</div>
+			</div>
+			<!-- Карточка статья -->
+
+		</div>
+
+	</div>
+	<!--// статьи -->
+
+	<!-- Блок помощь -->
+	<div class="bg-helper">
+		
+		<div class="container">
+			<div class="row">
+				
+				<!-- Вопрос -->
+				<div class="col-4">
+					<div class="block">Как сделать заказ?</div>
+				</div>
+				<!--// Вопрос -->
+
+				<!-- Вопрос -->
+				<div class="col-4">
+					<div class="block">Нужна помощь?</div>
+				</div>
+				<!--// Вопрос -->
+
+				<!-- Вопрос -->
+				<div class="col-4">
+					<div class="block">Вопрос-ответ</div>
+				</div>
+				<!--// Вопрос -->
+
+			</div>
+		</div>
+
+	</div>	
+	<!--// Блок помощь -->
+
+	<!-- Footer -->
+	<div class="container">
+		
+		<div class="logo">
+			<div class="block">Logo</div>
+		</div>
+		
+		<div class="footer__text">
+			<div class="block">Text</div>
+		</div>
+
+		<div class="footer-navigation">
+			<div class="row">
+				
+				<!-- Колонка -->
+				<div class="col-2">
+					<div class="block">Колонка 1</div>
+				</div>
+				<!-- Колонка -->
+				
+				<!-- Колонка -->
+				<div class="col-2">
+					<div class="block">Колонка 2</div>
+				</div>
+				<!-- Колонка -->
+
+				<!-- Колонка -->
+				<div class="col-3 offset-1">
+					<div class="block">Колонка 3</div>
+				</div>
+				<!-- Колонка -->
+
+				<!-- Колонка -->
+				<div class="col-3 offset-1">
+					<div class="block">Колонка 4</div>
+				</div>
+				<!-- Колонка -->
+
+			</div>
+		</div>
+
+	</div>
+	<!--// Footer -->
+
+	<!-- Scripts -->
+	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+	<script src="libs/owl-carousel/owl.carousel.js"></script>
+	<script src="js/main.js"></script>
+	
+</body>
+</html>
