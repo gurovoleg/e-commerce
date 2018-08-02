@@ -1,0 +1,60 @@
+.news-card {
+	background-color: @bgGrey;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right bottom;
+	border-radius: 4px;
+	height: 480px;
+	text-transform: uppercase;
+
+	.news-card__title {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 1.2;
+		margin-bottom: 12px;
+	}
+	
+	.news-card__status {
+		font-weight: 300;
+		font-size: 14px;
+		color:#4cb8c4;	
+		line-height: 1.2;
+		margin-bottom: 45px;
+	}
+	
+}
+
+.news-card--current {
+	height: 480px;
+	background-image: url('../img/bg/shoe.png');
+	padding: 65px 0 0 40px;
+}
+
+.news-card--big-sale {
+	height: 260px;
+	background-image: url('../img/bg/sale-dress2.png');
+	margin-bottom: 30px;
+	padding-top: 85px;
+	text-align: center;
+
+	.news-card__status {
+		margin-bottom: 30px;
+	}
+}
+
+.news-card--jacket, .news-card--bag {
+	height: 190px;
+	padding:70px 0 0 25px;
+
+	.news-card__title {
+		font-size: 18px;
+	}
+}
+
+.news-card--jacket {
+	background-image: url('../img/bg/new-name-jacket.png');
+}
+
+.news-card--bag {
+	background-image: url('../img/bg/proenza-schouler.png');
+}
