@@ -1,0 +1,30 @@
+[class^='nav-arrow'] {
+	width: 15px;
+	height: 15px;
+	border-right:3px solid @brown;
+	border-bottom:3px solid @brown;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.nav-arrow__right {
+	transform: rotate(-45deg);
+}
+
+.nav-arrow__left {
+	transform: rotate(135deg);
+}
+
+.slider-nav {
+	margin-top: 40px;
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+
+
+	@media (min-width: 768px) {
+		position: absolute;
+		bottom:-50px;
+		left:30px;
+	}
+}

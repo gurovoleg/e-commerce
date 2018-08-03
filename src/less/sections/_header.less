@@ -1,7 +1,11 @@
 .bg-header {
 	background-color: @bgGrey;
 	// border:1px solid #000;
-	padding-bottom: 85px;
+	padding-bottom: 40px;
+
+	@media (min-width: 768px) {
+		padding-bottom: 85px;	
+	}
 }
 
 .form-field {
@@ -31,13 +35,23 @@
 	text-decoration: none;
 	color:#000;
 	margin-right: 20px;
+	margin-bottom: 15px;
 	transition:0.3s;
+	display: inline-block;
+	text-align: center;
+	// display: block;
+
+
+	@media (min-width: 768px) {
+		margin-bottom: 0;
+	}
 
 	&:last-child {
 		margin-right: 0;
+		// text-align: right;
 	}
 
-	&:hover {
+	&:hover, &:active, &:focus {
 		text-decoration: none;
 		color:#93d2f0;
 	}
@@ -49,9 +63,16 @@
 }
 
 .fa-shopping-bag {
-	font-size: 36px;
+	font-size: 28px;
 	color:#4c4c4c;
-	margin-right: 20px;
+	margin-right: 10px;
+	vertical-align: top;
+
+	@media (min-width: 768px) {
+		font-size: 36px;
+		margin-right: 20px;
+
+	}
 }
 
 .shopping-cart {
@@ -66,19 +87,26 @@
 }
 
 .shopping-cart__goods {
-	margin-bottom: 3px;
-	&:after {
-		content:"0";
+	margin-bottom: 0px;
+
+	span {
 		color:#000;
+		font-weight: 600;
 	}
+	
+	@media (min-width: 768px) {
+		margin-bottom: 3px;
+	}
+
 }
 
 .shopping-cart__amount {
 	display: inline-block;
-	&:after {
-		content:"0";
+
+	span {
 		color:#000;
-		margin-left: 6px;
+		font-weight: 600;
+		margin-left: 2px;
 	}
 }
 

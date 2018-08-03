@@ -1,19 +1,24 @@
 .item-card {
+	position:relative;
 	background-color: #fff;
 	text-align: center;
 	height: 400px;
 	width: 100%;
 	// min-width: 250px;
-	padding:25px;
+	padding:45px 25px 0;
 
 	.fas.fa-star {
+		position: absolute;
+		right:25px;
+		top:25px;
 		color:#d9d9d9;
 		display: block;
 		text-align: right;
+		cursor: pointer;
 	}
 }
 
-.favorite {
+.fas.fa-star.favorite {
 	color:@yellow;
 }
 
@@ -66,4 +71,3 @@
 .card__price--red {
 	color:red;
 }
-

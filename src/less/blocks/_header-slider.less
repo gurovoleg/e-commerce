@@ -1,18 +1,36 @@
+.header-slider {
+	position: relative;	
+
+	.item-card--rounded {
+		border-radius: 0;
+		
+
+		@media (min-width: 768px) {
+			border-radius: 8px;
+		}	
+
+	}
+}
+
+
 .item-desc {
 	background-color: #343434;
 	height: auto;
 	min-height:400px;
-	border-radius: 8px;
 	background-image: url('../img/bg/bg-aj-jacket.png');
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: right center;
 	background-size: auto 100%;
 
 	padding-left: 40px;
 	padding-top: 165px;
 
-	box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.3),
-				0px 6px 20px 0px rgba(0, 0, 0, 0.3);
+	@media (min-width: 768px) {
+		border-radius: 8px;
+		box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.2),
+					0px 6px 20px 0px rgba(0, 0, 0, 0.2);
+	}
+
 }
 
 .item__title {

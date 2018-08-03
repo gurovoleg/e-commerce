@@ -16,7 +16,8 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.css">
 	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
-	<!-- <link rel="stylesheet" href="libs/owl-carousel/owl.theme.css"> -->
+	<!-- <link rel="stylesheet" href="libs/owl-carousel-2.3.4/owl.carousel.css"> -->
+	<!-- <link rel="stylesheet" href="libs/owl-carousel-2.3.4/owl.theme.default.css"> -->
 	<link rel="stylesheet" href="css/main.css">
 
 	<!-- fonts -->
@@ -39,16 +40,16 @@
 		
 		<!-- header-menu -->
 		<div class="container section">
-			<div class="row align-items-center">
+			<div class="row align-items-center justify-content-between">
 
 				<!-- лого -->
-				<div class="col-2">
+				<div class="col-3 col-md-4 col-lg-2 order-1 order-lg-1">
 					<div class="logo">BEIGE</div>
 				</div>		
 				<!--// лого -->
 
 				<!-- поиск -->
-				<div class="col-4">
+				<div class="col-md-12 col-lg-4 order-4 order-md-4 order-lg-2">
 					<div class="search">
 						<input type="text" class = "form-field" placeholder="Очень быстрый поиск">
 						<i class="fas fa-search"></i>
@@ -57,7 +58,7 @@
 				<!--// поиск -->
 
 				<!-- регистрация пользователя -->
-				<div class="col-3">
+				<div class="col-md-4 col-lg-3 order-3 order-lg-3">
 					
 					<!-- вход -->
 					<a href="#!" class="registration">
@@ -77,11 +78,11 @@
 				<!--// регистрация пользователя -->
 
 				<!-- корзина -->
-				<div class="col-3">
+				<div class="col-7 col-md-4 col-lg-3 order-2 order-lg-4">
 					<i class="fas fa-shopping-bag"></i>
 					<div class="shopping-cart">
-						<div class="shopping-cart__goods">Товаров - </div>
-						<div class="shopping-cart__amount">на сумму</div>
+						<div class="shopping-cart__goods">Товаров - <span>0</span></div>
+						<div class="shopping-cart__amount">на сумму <span>0</span></div>
 						<i class="fas fa-ruble-sign"></i>
 					</div>
 				</div>		
@@ -92,39 +93,82 @@
 		<!--// header-menu -->
 
 		<!-- header-slider -->
-		<div class="container">
-			
-			<div class="row">
-				
-				<div class="col-9">
-					<div class="item-desc">
-						<h2 class="item__title">Куртка ARMANI JEANS</h2>
-						<p class="item__label">Количество ограничено</p>
-						<p class="item__text">Черная кожаная куртка на<br>
-						 молнии от Armani Jeans</p>
-					</div>	
-				</div>
-				
-				<div class="col-3">
-					<div class="item-card item-card--rounded">
+		<div class="container header-slider">
+
+			<!-- header-carousel -->
+			<div class="owl-carousel-header">
+				<div class="row">
 					
-						<i class="fas fa-star favorite"></i>
-					
-						<div class="card-image">
-							<img src="img/bg/aj-jacket.png" alt="Фото товара">
-						</div>
-						
-						<h3 class="card__title">Куртка Armani Jeans</h3>
-						<div class="card_desc">Кожаная куртка на молнии</div>
-						<div class="card__price card__price--red">
-							<span>-15% |</span>
-							12 700
-							<i class="fas fa-ruble-sign"></i>
-						</div> 
-					
+					<div class="col-md-8 col-lg-9">
+						<div class="item-desc">
+							<h2 class="item__title">Куртка ARMANI JEANS</h2>
+							<p class="item__label">Количество ограничено</p>
+							<p class="item__text">Черная кожаная куртка на<br>
+							 молнии от Armani Jeans</p>
+						</div>	
 					</div>
+					
+					<div class="col-md-4 col-lg-3">
+						<div class="item-card item-card--rounded">
+						
+							<i class="fas fa-star favorite"></i>
+						
+							<div class="card-image">
+								<img src="img/bg/aj-jacket.png" alt="Фото товара">
+							</div>
+							
+							<h3 class="card__title">Куртка Armani Jeans</h3>
+							<div class="card_desc">Кожаная куртка на молнии</div>
+							<div class="card__price card__price--red">
+								<span>-15% |</span>
+								12 700
+								<i class="fas fa-ruble-sign"></i>
+							</div> 
+						
+						</div>
+					</div>
+
 				</div>
 
+				<div class="row">
+					
+					<div class="col-md-8 col-lg-9">
+						<div class="item-desc">
+							<h2 class="item__title">Узкие джинсы J Brand</h2>
+							<p class="item__label">на складе</p>
+							<p class="item__text">Хорошие узкие джинсы<br>
+							 почти даром от J Brand</p>
+						</div>	
+					</div>
+					
+					<div class="col-md-4 col-lg-3">
+						
+						<div class="item-card item-card--rounded">
+						
+							<i class="fas fa-star"></i>
+						
+							<div class="card-image">
+								<img src="img/bg/j-brand.png" alt="Фото товара">
+							</div>
+							
+							<h3 class="card__title">J BRAND</h3>
+							<div class="card_desc">Узкие джинсы</div>
+							<div class="card__price">
+								12 700
+								<i class="fas fa-ruble-sign"></i>
+							</div> 
+						
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!--// header-carousel -->
+
+			<!-- Навигация для сладйера, родитель bg-header -->
+			<div class="slider-nav">
+				<div class="nav-arrow__left h-prev"></div>
+				<div class="nav-arrow__right h-next"></div>
 			</div>
 		
 		</div>
@@ -135,7 +179,18 @@
 
 	<!-- Меню товаров -->
 	<div class="container section">
-		<div class="row">
+		<div class="owl-carousel-menu">
+			<div class="menu-item menu-item__bg1">женская одежда</div>
+			<div class="menu-item menu-item__bg2">мужская одежда</div>
+			<div class="menu-item menu-item__bg3">обувь</div>
+			<div class="menu-item menu-item__bg4">аксессуары</div>
+			<div class="menu-item menu-item__bg1">женская одежда</div>
+			<div class="menu-item menu-item__bg2">мужская одежда</div>
+			<div class="menu-item menu-item__bg3">обувь</div>
+			<div class="menu-item menu-item__bg4">аксессуары</div>
+		</div>
+
+		<!-- <div class="row">
 			<div class="owl-carousel-menu">
 				<div class="col-3">
 					<div class="menu-item menu-item__bg1">женская одежда</div>
@@ -167,7 +222,7 @@
 
 			</div>
 		
-		</div>
+		</div> -->
 	</div>
 	<!--// Меню товаров -->
 	
@@ -176,7 +231,7 @@
 		
 		<div class="row">
 			<!-- Левый блок с карточкой -->
-			<div class="col-6">
+			<div class="col-lg-6">
 				<div class="news-card news-card--current">
 					<div class="news-card__title">ТРЕНД НА ЭТОЙ НЕДЕЛЕ</div>
 					<div class="news-card__status">актуально</div>
@@ -186,7 +241,7 @@
 			<!--// Левый блок с карточкой -->
 			
 			<!-- Правый блок с карточками -->
-			<div class="col-6">
+			<div class="col-lg-6">
 				
 				<!-- Верхний блок с карточкой -->
 				<div class="row">
@@ -202,13 +257,13 @@
 
 				<!-- Нижний блок с карточками -->
 				<div class="row">
-					<div class="col-6">
+					<div class="col-md-6">
 						<div class="news-card news-card--jacket">
 							<div class="news-card__title">новые имена</div>
 							<div class="news-card__status">тренд</div>
 						</div>
 					</div>
-					<div class="col-6">
+					<div class="col-md-6">
 						<div class="news-card news-card--bag">
 							<div class="news-card__title">PROENZA SCHOULER</div>
 							<div class="news-card__status">Бренд</div>
@@ -373,38 +428,77 @@
 				
 			</div>
 
-			<!-- <div class="bg-newcomers__navigation"> -->
+			<div class="bg-newcomers__nav">
+				
+				<div class="nav-arrow__left prev"></div>
 				<a href="#!" class="button">смотреть все</a>
-			<!-- </div> -->
+				<div class="nav-arrow__right next"></div>
+				<!-- <a class="fas fa-angle-left prev"></a> -->
+				<!-- <a href="#!" class="button">смотреть все</a>
+				<a class="fas fa-angle-right next"></a> -->
+			</div>
 
 		</div>
 	</div>
 	<!--// Новинки -->
 
-	<!-- статьи -->
-	<div class="container">
+	<!-- _ARTICLES.LESS статьи -->
+	<div class="container section--articles">
 
-		<div class="news__title">
-			<div class="block">Статьи</div>
+		<div class="flex-wrapper">
+			<div class="articles__title">СТАТЬИ <span>/ ВСЕ</span></div>
+			<div class="articles__line"></div>
 		</div>
 
 		<div class="row">
 			
 			<!-- Карточка статья -->
-			<div class="col-4">
-				<div class="block">Статья 1</div>
+			<div class="col-md-4 article-item">
+				
+					<div class="artciles-item__image">
+						<img src="img/bg/bg-article1.png" alt="Article">
+					</div>
+					<div class="artciles-item-desc">
+						<div class="artciles-item__title">выбираем кроссовки</div>
+						<div class="artciles-item__text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae explicabo, ipsum accusantium mollitia itaque distinctio error dolorem minima iusto non vitae odit culpa blanditiis. Corrupti quod dignissimos, incidunt ipsum.
+						</div>	
+						<a href="#!">Читать дальше</a>
+					</div>
 			</div>
 			<!-- Карточка статья -->
 
 			<!-- Карточка статья -->
-			<div class="col-4">
-				<div class="block">Статья 2</div>
+			<div class="col-md-4 article-item">
+		
+					<div class="artciles-item__image">
+						<img src="img/bg/bg-article2.png" alt="Article">
+					</div>
+					<div class="artciles-item-desc">
+						<div class="artciles-item__title">Как выбрать очки и не ошибиться</div>
+						<div class="artciles-item__text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae explicabo, ipsum accusantium mollitia itaque distinctio error dolorem minima iusto non vitae odit culpa blanditiis. Corrupti quod dignissimos, incidunt ipsum.
+						</div>	
+						<a href="#!">Читать дальше</a>
+					</div>
+			
+			
 			</div>
 			<!-- Карточка статья -->
 
 			<!-- Карточка статья -->
-			<div class="col-4">
-				<div class="block">Статья 3</div>
+			<div class="col-md-4 article-item">
+					<div class="artciles-item__image">
+						<img src="img/bg/bg-article3.png" alt="Article">
+					</div>
+					<div class="artciles-item-desc">
+						<div class="artciles-item__title">Выбор бюстгальтера</div>
+						<div class="artciles-item__text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae explicabo, ipsum accusantium mollitia itaque distinctio error dolorem minima iusto non vitae odit culpa blanditiis. Corrupti quod dignissimos, incidunt ipsum.
+						</div>	
+						
+						<a href="#!">Читать дальше</a>
+					</div>
 			</div>
 			<!-- Карточка статья -->
 
@@ -420,20 +514,29 @@
 			<div class="row">
 				
 				<!-- Вопрос -->
-				<div class="col-4">
-					<div class="block">Как сделать заказ?</div>
+				<div class="col-12 col-md-4">
+					<div class="block-helper">
+						<i class="fas fa-cart-plus"></i>
+						<a href="#!" class="helper__title">Как сделать заказ?</a>
+					</div>
 				</div>
 				<!--// Вопрос -->
 
 				<!-- Вопрос -->
-				<div class="col-4">
-					<div class="block">Нужна помощь?</div>
+				<div class="col-12 col-md-4">
+					<div class="block-helper">
+						<i class="fas fa-exclamation-circle"></i>
+						<a href="#!" class="helper__title">Нужна помощь?</a>
+					</div>
 				</div>
 				<!--// Вопрос -->
 
 				<!-- Вопрос -->
-				<div class="col-4">
-					<div class="block">Вопрос-ответ</div>
+				<div class="col-12 col-md-4">
+					<div class="block-helper">
+						<i class="fas fa-question-circle"></i>
+						<a href="#!" class="helper__title">Вопрос-ответ</a>
+					</div>
 				</div>
 				<!--// Вопрос -->
 
@@ -444,52 +547,98 @@
 	<!--// Блок помощь -->
 
 	<!-- Footer -->
-	<div class="container">
-		
-		<div class="logo">
-			<div class="block">Logo</div>
-		</div>
-		
-		<div class="footer__text">
-			<div class="block">Text</div>
-		</div>
+	<div class="bg-footer">
+		<div class="container">
+			
+			<div class="logo">BEIGE</div>
+			
+			<p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut finibus nibh. Nunc suscipit velit at varius pulvinar. Nunc efficitur leo tempus sem porta vehicula. Donec nec augue ac tortor ullamcorper maximus. Suspendisse potenti. Duis sit amet lorem id justo faucibus porta. Fusce pharetra eget lorem non venenatis. Donec at convallis nisl, sit amet pellentesque metus. Pellentesque eleifend, leo ut pretium lobortis, est quam aliquet ligula, ut luctus purus dui quis purus. Nulla facilisi. Donec fermentum iaculis libero nec finibus. Duis interdum vel elit vel sodales. Maecenas sit amet purus dolor. Sed dignissim fringilla faucibus. Morbi vestibulum nisl ac risus lobortis, sit amet volutpat augue fringilla.</p
 
-		<div class="footer-navigation">
-			<div class="row">
-				
-				<!-- Колонка -->
-				<div class="col-2">
-					<div class="block">Колонка 1</div>
-				</div>
-				<!-- Колонка -->
-				
-				<!-- Колонка -->
-				<div class="col-2">
-					<div class="block">Колонка 2</div>
-				</div>
-				<!-- Колонка -->
+			<div class="footer-menu">
+				<div class="row">
+					
+					<!-- Колонка -->
+					<div class="col-md-6 col-lg-2">
+						<div class="menu-column">
+							<ul>
+								<li><a href="#!">Женская одежда</a></li>
+								<li><a href="#!">Мужская одежда</a></li>
+								<li><a href="#!">Детская одежда</a></li>
+								<li><a href="#!">Обувь</a></li>
+								<li><a href="#!">Аксессуары</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- Колонка -->
+					
+					<!-- Колонка -->
+					<div class="col-md-6 col-lg-2">
+						<div class="menu-column">
+							<ul>
+								<li><a href="#!">Распродажа</a></li>
+								<li><a href="#!">Скидки на товары</a></li>
+								<li><a href="#!">Тренд сезона</a></li>
+								<li><a href="#!">Новые поступления</a></li>
+								<li><a href="#!">Калькулятор</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- Колонка -->
 
-				<!-- Колонка -->
-				<div class="col-3 offset-1">
-					<div class="block">Колонка 3</div>
-				</div>
-				<!-- Колонка -->
+					<!-- Колонка -->
+					<div class="col-md-6 col-lg-3 offset-lg-1 mt-30">
 
-				<!-- Колонка -->
-				<div class="col-3 offset-1">
-					<div class="block">Колонка 4</div>
-				</div>
-				<!-- Колонка -->
+						<div class="menu-mail">
+							
+							<div class="menu__title">Подписаться на рассылку</div>
+							
+							<div class="mail">
+								<input type="text" class = "form-field" placeholder="Ваш E-mail">
+								<i class="fas fa-envelope"></i>
+							</div>
 
+						</div>
+						
+						<div class="menu__social-icons">
+							<div class="menu__title">Мы в соц сетях</div>
+							<div class="social-icons__block">
+								<a href="#1" class="fab fa-facebook-square"></a>
+								<a href="#1" class="fab fa-twitter-square"></a>
+								<a href="#1" class="fab fa-youtube-square"></a>
+								<a href="#1" class="fab fa-instagram"></a>
+							</div>
+						</div>
+					
+					</div>
+					<!-- Колонка -->
+
+					<!-- Колонка -->
+					<div class="col-md-6 col-lg-3 offset-lg-1 mt-30">
+						<div class="menu__title">Принимаем к оплате</div>
+						<div class="menu__pay-cards">
+							<i class="fab fa-cc-visa"></i>
+							<i class="fab fa-cc-mastercard"></i>
+							<i class="fab fa-cc-paypal"></i>
+						</div>
+						<div class="copyright">
+							<p>Copyright © 2016 BEIGE<br>
+							Онлайн магазин одежды для Вас!</p>
+							<p>Design by <a href="#!">Vladimir Shepel</a></p>
+						</div>
+					</div>
+					<!-- Колонка -->
+
+				</div>
 			</div>
-		</div>
 
+		</div>
 	</div>
 	<!--// Footer -->
 
 	<!-- Scripts -->
 	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
 	<script src="libs/owl-carousel/owl.carousel.js"></script>
+	<!-- <script src="libs/owl-carousel-2.3.4/owl.carousel.js"></script> -->
 	<script src="js/main.js"></script>
 	
 </body>

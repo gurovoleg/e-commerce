@@ -9,9 +9,13 @@
 
 	.news-card__title {
 		font-weight: 700;
-		font-size: 24px;
+		font-size: 18px;
 		line-height: 1.2;
 		margin-bottom: 12px;
+
+		@media (min-width: 768px) {
+			font-size: 24px;
+		}		
 	}
 	
 	.news-card__status {
@@ -27,7 +31,19 @@
 .news-card--current {
 	height: 480px;
 	background-image: url('../img/bg/shoe.png');
-	padding: 65px 0 0 40px;
+	padding-top: 65px;
+	margin-bottom: 30px;
+	text-align: center;
+
+	@media (min-width: 768px) {
+		text-align: left;
+		padding-left: 40px;
+	}
+	
+	@media (min-width: 992px) {
+		margin-bottom: 0;
+	}
+
 }
 
 .news-card--big-sale {
@@ -48,6 +64,14 @@
 
 	.news-card__title {
 		font-size: 18px;
+	}
+}
+
+.news-card--jacket {
+	margin-bottom: 30px;
+
+	@media (min-width: 992px) {
+		margin-bottom: 0;
 	}
 }
 
