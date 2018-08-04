@@ -31,7 +31,8 @@ $(document).ready(function() {
 	//Menu carousel
 	$(".owl-carousel-menu").owlCarousel({
 		 // singleItem : true,
-	    items:4
+	    items:4,
+	    autoPlay:true
 
 	});
 
@@ -64,14 +65,8 @@ $(document).ready(function() {
 	})
 
 
-
-
-
 	$('.fa-star').on('click',function(){
 		$(this).toggleClass('favorite');
 	});
-	
-	
-
 	
 });
