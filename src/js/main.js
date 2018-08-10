@@ -5,6 +5,7 @@ $(document).ready(function() {
 	owlNewcomers.owlCarousel({
 	    dots:false,
 	    onChanged: carouselControlsChange,
+	    margin:30,
         responsive: {
     	      0 : {items : 1},
     	    480 : {items : 2},
@@ -61,7 +62,16 @@ $(document).ready(function() {
 
 	// Товар отмечаем в Избранное
 	$('.fa-star').on('click',function(){
-		$(this).toggleClass('favorite');
+		$(this).toggleClass('favorite animated rubberBand');
+	});
+
+	// Добавляем/Убираем класс с тенью на карту
+	$('.item-card').on('mouseenter', function(){
+		$(this).addClass('item-card--shadow item-card--rounded'); 
+	});
+	
+	$('.item-card').on('mouseleave', function(){
+		$(this).removeClass('item-card--shadow item-card--rounded'); 
 	});
 
 	//pageScroll2id - плавная прокрутка
