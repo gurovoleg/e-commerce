@@ -1,72 +1,72 @@
 $(document).ready(function() {
 
-	var owlNewcomers = $(".owl-carousel-newcomers");
-
+	// NEWCOMERS carousel	
+	var owlNewcomers = $("#owl-carousel-newcomers");
 	owlNewcomers.owlCarousel({
-		 // singleItem : true,
-	    items : 4, //4 items above 1000px browser width
-	    itemsDesktop : [1200,4], //4 items between 1200px and 993px
-	    itemsDesktopSmall : [992,3], // betweem 992px and 769px
-	    itemsTablet: [768,2], //2 items between 768 and 0
-	    // itemsMobile : [540,1] // itemsMobile disabled - inherit from itemsTablet option
-
-	    slideSpeed : 800,
-	    paginationSpeed : 800,
-	    rewindSpeed : 1000,
-	    navigation : false,
-	    pagination : false,
-    	paginationNumbers: false,
-	    navigationText : ["",""],
-	    // theme : "newcomers-slider-theme"
+	    dots:false,
+	    onChanged: carouselControlsChange,
+        responsive: {
+    	      0 : {items : 1},
+    	    480 : {items : 2},
+    	    768 : {items : 3},
+    		992 : {items : 4}
+       	}	
 	});
 
-	// Custom Navigation Events
-	$(".next").click(function(){
-		owlNewcomers.trigger('owl.next');
-	})
-	$(".prev").click(function(){
-		owlNewcomers.trigger('owl.prev');
-	})
+		function carouselControlsChange(event) {
+			if (event.item.index == 0) {
+				$('.prev').addClass('disabled');
+			} else $('.prev').removeClass('disabled');
 
-	//Menu carousel
-	$(".owl-carousel-menu").owlCarousel({
-		 // singleItem : true,
-	    items:4,
-	    autoPlay:true
+			if (event.item.index + event.page.size >= event.item.count) {
+				$('.next').addClass('disabled');
+			} else $('.next').removeClass('disabled');
+		};
 
+		// Custom Navigation Events
+		$(".next").click(function(){
+			owlNewcomers.trigger('next.owl.carousel');
+		})
+		$(".prev").click(function(){
+			owlNewcomers.trigger('prev.owl.carousel');
+		})
+
+	// MENU carousel
+	$("#owl-carousel-menu").owlCarousel({
+		// items:4,
+	    dots:false,
+	    autoplay:true,
+	    responsive: {
+		      0 : {items : 1},
+		    480 : {items : 2},
+		    768 : {items : 3},
+			992 : {items : 4}
+		}	
 	});
 
-	var owlHeader = $(".owl-carousel-header");
-
+	// HEADER-SLIDER carousel
+	var owlHeader = $("#owl-carousel-header");
 	owlHeader.owlCarousel({
-		singleItem : true,
-	    // items : 4, //4 items above 1000px browser width
-	    // itemsDesktop : [1200,4], //4 items between 1200px and 993px
-	    // itemsDesktopSmall : [992,3], // betweem 992px and 769px
-	    // itemsTablet: [768,2], //2 items between 768 and 0
-	    // // itemsMobile : [540,1] // itemsMobile disabled - inherit from itemsTablet option
-
-	    slideSpeed : 800,
-	    paginationSpeed : 800,
-	    rewindSpeed : 1000,
-	    navigation : false,
-	    pagination : false,
-    	paginationNumbers: false,
-	    navigationText : ["",""],
-	    // theme : "newcomers-slider-theme"
+		items : 1, 
+	    dots:false
 	});
 
-	// Custom Navigation Events
-	$(".h-next").click(function(){
-		owlHeader.trigger('owl.next');
-	})
-	$(".h-prev").click(function(){
-		owlHeader.trigger('owl.prev');
-	})
+		// Custom Navigation Events
+		$(".h-next").click(function(){
+			owlHeader.trigger('next.owl.carousel');
+		})
+		$(".h-prev").click(function(){
+			owlHeader.trigger('prev.owl.carousel');
+		})
 
-
+	// Товар отмечаем в Избранное
 	$('.fa-star').on('click',function(){
 		$(this).toggleClass('favorite');
+	});
+
+	//pageScroll2id - плавная прокрутка
+	$("a[rel='m_PageScroll2id'], .mobile-menu a").mPageScroll2id({
+		scrollSpeed: 800
 	});
 	
 });

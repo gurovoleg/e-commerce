@@ -15,9 +15,10 @@
 	<!-- Syles -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.css">
-	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
-	<!-- <link rel="stylesheet" href="libs/owl-carousel-2.3.4/owl.carousel.css"> -->
+	<!-- <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css"> -->
+	<link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
 	<!-- <link rel="stylesheet" href="libs/owl-carousel-2.3.4/owl.theme.default.css"> -->
+	<link rel="stylesheet" href="css/mobile-navigation__icon.css">
 	<link rel="stylesheet" href="css/main.css">
 
 	<!-- fonts -->
@@ -37,6 +38,18 @@
 
 	<!-- header -->
 	<div class="bg-header">
+
+		<div id="mobile-menu__icon" class="mobile-menu__icon">
+			<span></span>
+		</div>
+
+		<div class="mobile-menu">
+			<a href="#slider" class="mobile-menu__item">Слайдер</a>
+			<a href="#news" class="mobile-menu__item">Новости</a>
+			<a href="#newcomers" class="mobile-menu__item">Новинки</a>
+			<a href="#articles" class="mobile-menu__item">Статьи</a>
+			<a href="#footer" class="mobile-menu__item">Подвал</a>
+		</div>
 		
 		<!-- header-menu -->
 		<div class="container section">
@@ -93,10 +106,11 @@
 		<!--// header-menu -->
 
 		<!-- header-slider -->
-		<div class="container header-slider">
+		<div id="slider" class="container header-slider">
 
 			<!-- header-carousel -->
-			<div class="owl-carousel-header">
+			<div id="owl-carousel-header"class="owl-carousel">
+		
 				<div class="row">
 					
 					<div class="col-md-8 col-lg-9">
@@ -162,6 +176,7 @@
 					</div>
 
 				</div>
+		
 			</div>
 			<!--// header-carousel -->
 
@@ -178,23 +193,26 @@
 	<!--// header -->
 
 	<!-- Меню товаров -->
-	<div class="container section--menu">
-		<div class="owl-carousel-menu">
-			<div class="menu-item menu-item__bg1">женская одежда</div>
-			<div class="menu-item menu-item__bg2">мужская одежда</div>
-			<div class="menu-item menu-item__bg3">обувь</div>
-			<div class="menu-item menu-item__bg4">аксессуары</div>
-			<div class="menu-item menu-item__bg1">женская одежда</div>
-			<div class="menu-item menu-item__bg2">мужская одежда</div>
-			<div class="menu-item menu-item__bg3">обувь</div>
-			<div class="menu-item menu-item__bg4">аксессуары</div>
+	<div class="container section section--menu">
+		
+		<div class="wrapper-margin">
+			<div id="owl-carousel-menu" class="owl-carousel">
+				<div class="menu-item menu-item__bg1">женская одежда</div>
+				<div class="menu-item menu-item__bg2">мужская одежда</div>
+				<div class="menu-item menu-item__bg3">обувь</div>
+				<div class="menu-item menu-item__bg4">аксессуары</div>
+				<div class="menu-item menu-item__bg1">женская одежда</div>
+				<div class="menu-item menu-item__bg2">мужская одежда</div>
+				<div class="menu-item menu-item__bg3">обувь</div>
+				<div class="menu-item menu-item__bg4">аксессуары</div>
+			</div>
 		</div>
 
 	</div>
 	<!--// Меню товаров -->
 	
 	<!-- Новости-->
-	<div class="container section">
+	<div id="news" class="container section">
 		
 		<div class="row">
 			<!-- Левый блок с карточкой -->
@@ -248,7 +266,7 @@
 	<!--// Новости-->
 	
 	<!-- Новинки -->
-	<div class="bg-newcomers">
+	<div id="newcomers" class="bg-newcomers">
 		<div class="container clearfix">
 			
 			<div class="bg-newcomers__title">~ Новинки ~</div>
@@ -256,7 +274,7 @@
 				<!-- товары -->
 				<div class="row mb-50">
 				
-					<div class="owl-carousel-newcomers">			
+					<div id="owl-carousel-newcomers" class="owl-carousel">			
 					
 						<!-- Капточка товара -->
 						<div class="col-3">
@@ -410,7 +428,7 @@
 	<!--// Новинки -->
 
 	<!-- _ARTICLES.LESS статьи -->
-	<div class="container section--articles">
+	<div id="articles" class="container section section--articles">
 
 		<div class="flex-wrapper">
 			<div class="articles__title">СТАТЬИ <span>/ ВСЕ</span></div>
@@ -514,7 +532,7 @@
 	<!--// Блок помощь -->
 
 	<!-- Footer -->
-	<div class="bg-footer">
+	<div id="footer" class="bg-footer">
 		<div class="container">
 			
 			<div class="logo">BEIGE</div>
@@ -602,10 +620,13 @@
 	</div>
 	<!--// Footer -->
 
-	<!-- Scripts -->
+	<!-- Vendor's Scripts -->
 	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
-	<script src="libs/owl-carousel/owl.carousel.js"></script>
-	<!-- <script src="libs/owl-carousel-2.3.4/owl.carousel.js"></script> -->
+	<script src="libs/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+	
+	<!-- My Scripts -->
+	<script src="js/mobile-menu.js"></script>
 	<script src="js/main.js"></script>
 	
 </body>
