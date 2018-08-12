@@ -1,11 +1,16 @@
 .news-card {
 	background-color: @bgGrey;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-position: right bottom;
 	border-radius: 4px;
 	height: 480px;
 	text-transform: uppercase;
+	
+	@media (min-width: 992px) {
+		background-size: cover;
+	}	
+
 
 	.news-card__title {
 		font-weight: 700;
@@ -49,9 +54,14 @@
 .news-card--big-sale {
 	height: 260px;
 	background-image: url('../img/bg/sale-dress2.png');
+	background-position: center bottom;
 	margin-bottom: 30px;
 	padding-top: 85px;
 	text-align: center;
+
+	@media (min-width: 768px) {
+		background-size: cover;
+	}
 
 	.news-card__status {
 		margin-bottom: 30px;
