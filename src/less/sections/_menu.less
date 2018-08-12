@@ -1,6 +1,6 @@
 .menu-item {
 	height: 100px;
-	background-color: #000;
+	// background-color: #000;
 	border-radius: 4px;
 	color:#fff;
 	text-align: center;
@@ -14,21 +14,28 @@
 	background-size: cover;
 	margin-right: 15px;
 	margin-left: 15px;
+	cursor: pointer;
+	filter:brightness(50%);
+	transition:0.5s;
+
+	&:hover {
+		filter:brightness(85%);	
+	}
 }
 
 .menu-item__bg1 {
-	background-image: url('../img/bg/women-dress.png');
+	background-image: url('../img/bg/new/women-dress.png');
 }
 
 .menu-item__bg2 {
-	background-image: url('../img/bg/men-dress.png');
+	background-image: url('../img/bg/new/men-dress.png');
 }
 
 .menu-item__bg3 {
-	background-image: url('../img/bg/footwear.png');
+	background-image: url('../img/bg/new/footwear.png');
 }
 
 .menu-item__bg4 {
-	background-image: url('../img/bg/accessories.png');
+	background-image: url('../img/bg/new/accessories.png');
 }
 

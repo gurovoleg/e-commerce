@@ -40,91 +40,124 @@
 	<!-- header -->
 	<div class="bg-header">
 
-		<div id="mobile-menu__icon" class="mobile-menu__icon">
+<!-- 		<div id="mobile-menu__icon" class="mobile-menu__icon">
 			<span></span>
 		</div>
 
 		<div class="mobile-menu animated slideInDown">
+			
+			<i class="fas fa-lock"></i>
+			<a href="#" class="mobile-menu__item">Войти</a>
+			
+			<i class="fas fa-user-plus"></i>
+			<a href="#" class="mobile-menu__item">Регситрация</a>
+			
 			<a href="#slider" class="mobile-menu__item">Слайдер</a>
 			<a href="#news" class="mobile-menu__item">Новости</a>
 			<a href="#newcomers" class="mobile-menu__item">Новинки</a>
 			<a href="#articles" class="mobile-menu__item">Статьи</a>
-			<a href="#footer" class="mobile-menu__item">Подвал</a>
-		</div>
+			<a href="#footer" class="mobile-menu__item">Контакты</a>
+		</div> -->
 		
 		<!-- header-menu -->
-		<div class="container section">
-			<div class="row align-items-center justify-content-between">
+		<div class="header-menu">
+			<div class="container section section--header-menu">
+				<div class="row align-items-center justify-content-between">
 
-				<!-- лого -->
-				<div class="col-3 col-md-4 col-lg-2 order-2 order-md-1 order-lg-1">
-					<div class="logo">BEIGE</div>
-				</div>		
-				<!--// лого -->
-
-				<!-- поиск -->
-				<div class="col-md-12 col-lg-4 order-4 order-md-4 order-lg-2">
-					<div class="search">
-						<input type="text" class = "form-field" placeholder="Очень быстрый поиск">
-						<i class="fas fa-search"></i>
+					<div id="mobile-menu__icon" class="mobile-menu__icon">
+						<span></span>
 					</div>
-				</div>	
-				<!--// поиск -->
 
-				<!-- регистрация пользователя -->
-				<div class="col-md-4 col-lg-3 order-1 order-md-2 order-lg-3 flex-wrapper-header">
-					
-					<!-- вход -->
-					<a href="#!" class="registration">
-						<i class="fas fa-lock"></i>
-						Войти
-					</a>
-					<!--// вход -->
+					<!-- лого -->
+					<div class="col-3 col-md-4 col-lg-2 order-2 order-md-1 order-lg-1">
+						<div class="logo">BEIGE</div>
+					</div>		
+					<!--// лого -->
 
-					<!-- регистрация -->
-					<a href="#!" class="registration">
-						<i class="fas fa-user-plus"></i>
-						Регистрация
-					</a>
-					<!--// регистрация -->
+					<!-- поиск -->
+					<div class="col-md-12 col-lg-4 order-4 order-md-4 order-lg-2">
+						<div class="search">
+							<input type="text" class = "form-field" placeholder="Очень быстрый поиск">
+							<i class="fas fa-search"></i>
+						</div>
+					</div>	
+					<!--// поиск -->
 
-				</div>	
-				<!--// регистрация пользователя -->
+					<!-- регистрация пользователя -->
+					<div class="col-md-4 col-lg-3 order-1 order-md-2 order-lg-3 flex-wrapper-header">
+						
+						<!-- вход -->
+						<a href="#!" class="registration">
+							<i class="fas fa-lock"></i>
+							Войти
+						</a>
+						<!--// вход -->
 
-				<!-- корзина -->
-				<div class="col-7 col-md-4 col-lg-3 order-3 order-md-3 order-lg-4">
-					<i class="fas fa-shopping-bag"></i>
-					<div class="shopping-cart">
-						<div class="shopping-cart__goods">Товаров - <span>0</span></div>
-						<div class="shopping-cart__amount">на сумму <span>0</span></div>
-						<i class="fas fa-ruble-sign"></i>
-					</div>
-				</div>		
-				<!--// корзина -->
+						<!-- регистрация -->
+						<a href="#!" class="registration">
+							<i class="fas fa-user-plus"></i>
+							Регистрация
+						</a>
+						<!--// регистрация -->
 
+					</div>	
+					<!--// регистрация пользователя -->
+
+					<!-- корзина -->
+					<div class="col-auto col-md-4 col-lg-3 order-3 order-md-3 order-lg-4">
+						<i class="fas fa-shopping-bag"></i>
+						<div class="shopping-cart">
+							<div class="shopping-cart__goods">Товаров - <span>0</span></div>
+							<div class="shopping-cart__amount">на сумму <span>0</span></div>
+							<i class="fas fa-ruble-sign"></i>
+						</div>
+					</div>		
+					<!--// корзина -->
+
+				</div>
 			</div>
 		</div>
 		<!--// header-menu -->
 
+
+
+		<div class="mobile-menu">
+			
+			<a href="#" class="mobile-menu__item">
+				<i class="fas fa-lock"></i>
+				Войти
+			</a>
+			
+			<a href="#" class="mobile-menu__item">
+				<i class="fas fa-user-plus"></i>
+				Регистрация
+			</a>
+			
+			<a href="#slider" class="mobile-menu__item">Слайдер</a>
+			<a href="#news" class="mobile-menu__item">Новости</a>
+			<a href="#newcomers" class="mobile-menu__item">Новинки</a>
+			<a href="#articles" class="mobile-menu__item">Статьи</a>
+			<a href="#footer" class="mobile-menu__item">Контакты</a>
+		</div>
+
+
+
 		<!-- header-slider -->
-		<div id="slider" class="container header-slider">
+		<div id="slider" class="header-slider">
 
 			<!-- header-carousel -->
 			<div id="owl-carousel-header"class="owl-carousel">
 		
-				<div class="row">
-					
-					<div class="col-md-8 col-lg-9">
+				<div class="container">
+					<div class="carousel-item">
 						<div class="item-desc">
 							<h2 class="item__title">Куртка ARMANI JEANS</h2>
 							<p class="item__label">Количество ограничено</p>
 							<p class="item__text">Черная кожаная куртка на<br>
 							 молнии от Armani Jeans</p>
 						</div>	
-					</div>
-					
-					<div class="col-md-4 col-lg-3">
-						<div class="item-card item-card--rounded">
+
+						<div class="item-card item-card--min-width item-card--rounded">
 						
 							<i class="fas fa-star"></i>
 						
@@ -142,50 +175,76 @@
 						
 						</div>
 					</div>
+				</div> 	
 
-				</div>
-
-				<div class="row">
-					
-					<div class="col-md-8 col-lg-9">
+				<div class="container">
+					<div class="carousel-item">
 						<div class="item-desc">
-							<h2 class="item__title">Узкие джинсы J Brand</h2>
-							<p class="item__label">на складе</p>
-							<p class="item__text">Хорошие узкие джинсы<br>
-							 почти даром от J Brand</p>
+							<h2 class="item__title">Куртка ARMANI JEANS</h2>
+							<p class="item__label">Количество ограничено</p>
+							<p class="item__text">Черная кожаная куртка на<br>
+							 молнии от Armani Jeans</p>
 						</div>	
-					</div>
-					
-					<div class="col-md-4 col-lg-3">
-						
-						<div class="item-card item-card--rounded">
+
+						<div class="item-card item-card--min-width item-card--rounded">
 						
 							<i class="fas fa-star"></i>
 						
 							<div class="card-image">
-								<img src="img/bg/j-brand.png" alt="Фото товара">
+								<img src="img/bg/aj-jacket.png" alt="Фото товара">
 							</div>
 							
-							<h3 class="card__title">J BRAND</h3>
-							<div class="card_desc">Узкие джинсы</div>
-							<div class="card__price">
+							<h3 class="card__title">Куртка Armani Jeans</h3>
+							<div class="card_desc">Кожаная куртка на молнии</div>
+							<div class="card__price card__price--red">
+								<span>-15% |</span>
 								12 700
 								<i class="fas fa-ruble-sign"></i>
 							</div> 
 						
 						</div>
 					</div>
+				</div>	
 
-				</div>
-		
+				<div class="container">
+					<div class="carousel-item">
+						<div class="item-desc">
+							<h2 class="item__title">Куртка ARMANI JEANS</h2>
+							<p class="item__label">Количество ограничено</p>
+							<p class="item__text">Черная кожаная куртка на<br>
+							 молнии от Armani Jeans</p>
+						</div>	
+
+						<div class="item-card item-card--min-width item-card--rounded">
+						
+							<i class="fas fa-star"></i>
+						
+							<div class="card-image">
+								<img src="img/bg/aj-jacket.png" alt="Фото товара">
+							</div>
+							
+							<h3 class="card__title">Куртка Armani Jeans</h3>
+							<div class="card_desc">Кожаная куртка на молнии</div>
+							<div class="card__price card__price--red">
+								<span>-15% |</span>
+								12 700
+								<i class="fas fa-ruble-sign"></i>
+							</div> 
+						
+						</div>
+					</div>	
+				</div>	
+
 			</div>
 			<!--// header-carousel -->
-
+			
 			<!-- Навигация для сладйера, родитель bg-header -->
-			<div class="slider-nav">
-				<div class="nav-arrow__left h-prev"></div>
-				<div class="nav-arrow__right h-next"></div>
-			</div>
+			<div class="container">
+				<div class="slider-nav">
+					<div class="nav-arrow__left h-prev"></div>
+					<div class="nav-arrow__right h-next"></div>
+				</div>
+			</div>	
 		
 		</div>
 		<!--// header-slider -->
@@ -428,7 +487,7 @@
 			<div class="col-md-4 article-item">
 				
 					<div class="artciles-item__image">
-						<img src="img/bg/bg-article1.png" alt="Article">
+						<img src="img/bg/new/bg-article1.png" alt="Article">
 					</div>
 					<div class="artciles-item-desc">
 						<div class="artciles-item__title">выбираем кроссовки</div>
@@ -444,7 +503,7 @@
 			<div class="col-md-4 article-item">
 		
 					<div class="artciles-item__image">
-						<img src="img/bg/bg-article2.png" alt="Article">
+						<img src="img/bg/new/bg-article2.png" alt="Article">
 					</div>
 					<div class="artciles-item-desc">
 						<div class="artciles-item__title">Как выбрать очки и не ошибиться</div>
@@ -461,7 +520,7 @@
 			<!-- Карточка статья -->
 			<div class="col-md-4 article-item">
 					<div class="artciles-item__image">
-						<img src="img/bg/bg-article3.png" alt="Article">
+						<img src="img/bg/new/bg-article3.png" alt="Article">
 					</div>
 					<div class="artciles-item-desc">
 						<div class="artciles-item__title">Выбор бюстгальтера</div>

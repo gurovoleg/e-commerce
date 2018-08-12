@@ -1,33 +1,54 @@
 .header-slider {
 	position: relative;	
+	padding-top: 100px;
+
+	@media (min-width: 768px) {
+		padding-top: 0;
+	}	
 
 	.item-card--rounded {
 		border-radius: 0;
-		
 
-		@media (min-width: 768px) {
+		@media (min-width: 992px) {
 			border-radius: 8px;
 		}	
-
 	}
 }
 
+.carousel-item {
+	display: flex;
+	flex-direction:column;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	@media (min-width: 768px) {
+		flex-direction:row;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+}
 
 .item-desc {
 	background-color: #343434;
-	height: auto;
-	min-height:400px;
+	height: 400px;
+	width: 100%;
 	background-image: url('../img/bg/bg-aj-jacket.png');
 	background-repeat: no-repeat;
 	background-position: right center;
 	background-size: auto 100%;
-
+	cursor: pointer;
+	transition: 0.5s;
+	
 	padding-left: 40px;
 	padding-top: 165px;
 	
 	@media (min-width: 768px) {
-		border-radius: 8px;
 		margin-bottom: 17px;
+	}
+	@media (min-width: 992px) {
+		border-radius: 8px;
+		margin-right: 30px;
 		box-shadow: 5px 15px 20px -10px rgba(0, 0, 0, 0.55);
 	}
 

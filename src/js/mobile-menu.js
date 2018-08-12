@@ -16,6 +16,7 @@ $(document).ready(function() {
 	$($navLink).on('click', function(){
 		$($mobileIcon).removeClass(IconAnimation);
 		$($navList).removeClass(navListOpened);
+		
 	});
 
 	$(window).resize(function(){

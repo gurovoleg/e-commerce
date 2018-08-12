@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+	var $w = $(window).width();
+	
+	$(window).resize(function(){
+		$w = $(window).width();
+	});
+		
 	// NEWCOMERS carousel	
 	var owlNewcomers = $("#owl-carousel-newcomers");
 	owlNewcomers.owlCarousel({
@@ -66,17 +72,18 @@ $(document).ready(function() {
 	});
 
 	// Добавляем/Убираем класс с тенью на карту
-	$('.item-card').on('mouseenter', function(){
-		$(this).addClass('item-card--shadow item-card--rounded'); 
+	$('.carousel-item').on('mouseenter', function(){
+		if ($w < 992) $(this.children).addClass('item-card--shadow'); 
 	});
 	
-	$('.item-card').on('mouseleave', function(){
-		$(this).removeClass('item-card--shadow item-card--rounded'); 
+	$('.carousel-item').on('mouseleave', function(){
+		if ($w < 992) $(this.children).removeClass('item-card--shadow'); 
 	});
 
 	//pageScroll2id - плавная прокрутка
 	$("a[rel='m_PageScroll2id'], .mobile-menu a").mPageScroll2id({
-		scrollSpeed: 800
+		scrollSpeed: 800,
+		offset:50
 	});
 	
 });
