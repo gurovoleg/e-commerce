@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'consolas';
+    src: url('consolas-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'consolas';
+    src: url('consolas-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'consolas';
+    src: url('consolas-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}

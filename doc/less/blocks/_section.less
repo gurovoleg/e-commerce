@@ -1,0 +1,36 @@
+.section {
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+
+.section--header-menu {
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	@media (min-width: 768px) {
+		padding-top: 40px;
+		padding-bottom: 60px;		
+	}	
+}
+
+.section--menu {
+	padding-bottom: 0px;
+}
+
+.section--articles {
+	padding-top: 60px;
+	padding-bottom: 90px;
+
+	a {
+		color:#2d2d2d;
+		transition: color 0.3s;
+
+		&:hover, &:active, &:focus {
+			color:@hover;
+		}
+	}
+}
+
+.section--footer {
+	background-color:#f7f7f7;
+}

@@ -1,0 +1,86 @@
+.item-card {
+	position:relative;
+	background-color: #fff;
+	text-align: center;
+	height: 400px;
+	width: 100%;
+	// min-width: 250px;
+	padding:45px 25px 0;
+	transition: 0.5s;
+	margin-bottom: 17px;
+	cursor: pointer;
+
+	.fas.fa-star {
+		position: absolute;
+		right:25px;
+		top:25px;
+		color:#d9d9d9;
+		display: block;
+		text-align: right;
+		cursor: pointer;
+	}
+}
+
+.item-card--min-width {
+	width: auto;
+	min-width: 250px;
+}
+
+// Правим свойства owl.carousel.css, где прописан display и width
+.owl-carousel .owl-item .item-card img {
+		display: inline-block;
+		width: auto; 
+}
+
+.fas.fa-star.favorite {
+	color:@yellow;
+}
+
+.item-card--shadow {
+	box-shadow: 5px 15px 20px -10px rgba(0, 0, 0, 0.55);
+}
+
+.item-card--rounded {
+	border-radius: 8px;
+}
+
+.card-image {
+	height: 200px;
+	margin-bottom: 43px;
+}
+
+.card__title {
+	margin:0;
+	font-family: 'Roboto Condensed';
+	font-weight: 700;
+	line-height: 1;
+	font-size: 16px;
+	color:#000;
+	margin-bottom: 8px;
+}
+
+.card_desc {
+	font-weight: 300;
+	line-height: 1;
+	letter-spacing: -0.7px;
+	font-size: 12px;
+	margin-bottom: 25px;
+}
+
+.card__price {
+	font-size: 16px;
+	color:@yellow;
+	font-weight: 400;
+
+	span {
+		color:#d1d1d1;
+	}
+
+	.fa-ruble-sign {
+		font-size: 12px;
+	}
+}
+
+.card__price--red {
+	color:red;
+}
